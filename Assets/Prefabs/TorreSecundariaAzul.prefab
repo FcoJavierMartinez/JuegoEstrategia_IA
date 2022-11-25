@@ -1097,6 +1097,7 @@ GameObject:
   - component: {fileID: 6073785573986839824}
   - component: {fileID: 6069792691445521704}
   - component: {fileID: 6057500672574993910}
+  - component: {fileID: 2067752535161502267}
   m_Layer: 0
   m_Name: TorreSecundariaAzul
   m_TagString: Untagged
@@ -1174,6 +1175,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2067752535161502267
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6071513920067610014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.999999, y: 5.1571345, z: 4.000001}
+  m_Center: {x: -0.022491872, y: 2.6025288, z: -0.14614522}
 --- !u!1 &6071548948853243136
 GameObject:
   m_ObjectHideFlags: 0

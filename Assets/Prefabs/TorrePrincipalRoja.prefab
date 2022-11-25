@@ -1886,6 +1886,7 @@ GameObject:
   - component: {fileID: 7754071113379827258}
   - component: {fileID: 7781266776892411720}
   - component: {fileID: 7771337720656856198}
+  - component: {fileID: 7954745736910261802}
   m_Layer: 0
   m_Name: TorrePrincipalRoja
   m_TagString: Untagged
@@ -1970,6 +1971,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7954745736910261802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7750267603789504388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.9281483, y: 6.975555, z: 5.5999994}
+  m_Center: {x: -0.000010371208, y: 3.4780529, z: 0.016314387}
 --- !u!1 &7750269225769175408
 GameObject:
   m_ObjectHideFlags: 0

@@ -1468,6 +1468,7 @@ GameObject:
   - component: {fileID: 9013610152843024349}
   - component: {fileID: 9043038177954827481}
   - component: {fileID: 9031110163543922203}
+  - component: {fileID: 3609164241441339443}
   m_Layer: 0
   m_Name: TorrePrincipalAzul
   m_TagString: Untagged
@@ -1550,6 +1551,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3609164241441339443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007967323257200489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.9281483, y: 6.975555, z: 5.5999994}
+  m_Center: {x: -0.000010371208, y: 3.4780529, z: 0.016314387}
 --- !u!1 &9007968315144332615
 GameObject:
   m_ObjectHideFlags: 0
