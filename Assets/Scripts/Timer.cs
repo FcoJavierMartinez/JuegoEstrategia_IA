@@ -18,5 +18,10 @@ public class Timer : MonoBehaviour
         seconds = (int)(time - minutes * 60f);
 
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        if (time < 60f)
+        {
+            timerText.color = Color.red;
+        }
     }
 }
