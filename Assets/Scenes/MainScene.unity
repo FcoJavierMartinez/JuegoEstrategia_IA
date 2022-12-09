@@ -475,7 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energyText: {fileID: 2100151608}
   energy: 0
-  aumento: 0
+  aumento: 1
 --- !u!4 &360166884
 Transform:
   m_ObjectHideFlags: 0
