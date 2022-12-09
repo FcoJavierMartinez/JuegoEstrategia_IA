@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class energyScrpt : MonoBehaviour
+public class energyScript : MonoBehaviour
 {
     public TMP_Text energyText;
     public float energy;
