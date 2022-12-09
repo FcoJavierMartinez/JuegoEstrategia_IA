@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 327434644}
   m_Layer: 0
-  m_Name: TropasPrueba
+  m_Name: Tropas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -533,7 +533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 449939458}
   m_Layer: 0
-  m_Name: TorresDestruidasPrueba
+  m_Name: TorresDestruidas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,7 +640,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 708628893}
         m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
-        m_MethodName: gastarEnergiaArquero
+        m_MethodName: invocarArquero
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -791,6 +791,14 @@ MonoBehaviour:
   gastoEnergiaMele: 15
   gastoEnergiaMago: 20
   gastoEnergiaArquero: 25
+  bomba: {fileID: 7636606171733959642, guid: b41a9112f99a35a428042a97cba7ebb2, type: 3}
+  tanque: {fileID: 9061308855691115329, guid: 16e4990a490979747a98710b6b733a39, type: 3}
+  mele: {fileID: 7000833441767632261, guid: 448299780f956c74e9cad29ed645197e, type: 3}
+  mago: {fileID: 4391591024783336723, guid: d409a9005ff28c3479d2c275791bc5a1, type: 3}
+  arquero: {fileID: 8971594762277698982, guid: 1138077262810cf40b171a60d751c6fe, type: 3}
+  posicionTorreCentral: {fileID: 2014118786}
+  posicionTorreIzq: {fileID: 551623248}
+  posicionTorreDer: {fileID: 1576350515}
 --- !u!4 &708628894
 Transform:
   m_ObjectHideFlags: 0
@@ -983,7 +991,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 708628893}
         m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
-        m_MethodName: gastarEnergiaTanque
+        m_MethodName: invocarTanque
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1778,7 +1786,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 708628893}
         m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
-        m_MethodName: gastarEnergiaBomba
+        m_MethodName: invocarBomba
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1998,7 +2006,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 708628893}
         m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
-        m_MethodName: gastarEnergiaMago
+        m_MethodName: invocarMago
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2482,7 +2490,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 708628893}
         m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
-        m_MethodName: gastarEnergiaMele
+        m_MethodName: invocarMele
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
