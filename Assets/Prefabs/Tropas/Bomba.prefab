@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 7634224350394615396}
   - component: {fileID: 7543082264769188278}
   m_Layer: 0
-  m_Name: MonstruoBomba
+  m_Name: Bomba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -637,7 +637,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 455612853}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 708628893}
+        m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
+        m_MethodName: gastarEnergiaArquero
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &455612853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,6 +785,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c94a4cf65d6c524409bf9e2e8439e437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  energy: {fileID: 360166883}
+  gastoEnergiaBomba: 10
+  gastoEnergiaTanque: 30
+  gastoEnergiaMele: 15
+  gastoEnergiaMago: 20
+  gastoEnergiaArquero: 25
 --- !u!4 &708628894
 Transform:
   m_ObjectHideFlags: 0
@@ -962,7 +980,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 893406178}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 708628893}
+        m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
+        m_MethodName: gastarEnergiaTanque
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &893406178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1745,7 +1775,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1482612205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 708628893}
+        m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
+        m_MethodName: gastarEnergiaBomba
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1482612205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,7 +1995,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1577856406}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 708628893}
+        m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
+        m_MethodName: gastarEnergiaMago
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1577856406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,7 +2479,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2048150797}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 708628893}
+        m_TargetAssemblyTypeName: buttonScript, Assembly-CSharp
+        m_MethodName: gastarEnergiaMele
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2048150797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3205,7 +3271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7636606171733959642, guid: b41a9112f99a35a428042a97cba7ebb2, type: 3}
       propertyPath: m_Name
-      value: MonstruoBomba
+      value: Bomba
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b41a9112f99a35a428042a97cba7ebb2, type: 3}

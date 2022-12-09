@@ -1,18 +1,61 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class buttonScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public energyScript energy;
+
+    public int gastoEnergiaBomba;
+    public int gastoEnergiaTanque;
+    public int gastoEnergiaMele;
+    public int gastoEnergiaMago;
+    public int gastoEnergiaArquero;
+
+    //Bomba
+    public void gastarEnergiaBomba()
     {
-        
+        if (energy.energy > gastoEnergiaBomba)
+        {
+            energy.energy -= gastoEnergiaBomba;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    //Tanque
+    public void gastarEnergiaTanque()
     {
-        
+        if (energy.energy > gastoEnergiaTanque)
+        {
+            energy.energy -= gastoEnergiaTanque;
+        }
+    }
+
+    //Mele
+    public void gastarEnergiaMele()
+    {
+        if (energy.energy > gastoEnergiaMele)
+        {
+            energy.energy -= gastoEnergiaMele;
+        }
+    }
+
+    //Mago
+    public void gastarEnergiaMago()
+    {
+        if (energy.energy > gastoEnergiaMago)
+        {
+            energy.energy -= gastoEnergiaMago;
+        }
+    }
+
+    //Arquero
+    public void gastarEnergiaArquero()
+    {
+        if (energy.energy > gastoEnergiaArquero)
+        {
+            energy.energy -= gastoEnergiaArquero;
+        }
     }
 }
