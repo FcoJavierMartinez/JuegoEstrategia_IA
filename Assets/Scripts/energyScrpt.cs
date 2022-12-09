@@ -15,7 +15,7 @@ public class energyScrpt : MonoBehaviour
         if (energy < 100)
         {
             energy += aumento * Time.deltaTime;
-            energyText.text = string.Format("{0:00}", energy.ToString());
+            energyText.text = energy.ToString("F0");
         }
     }
 }
