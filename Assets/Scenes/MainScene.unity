@@ -1990,6 +1990,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2118987363238506284, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2118987363238506284, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
+      propertyPath: m_TagString
+      value: tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119685072981452457, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2119685072981452457, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
+      propertyPath: m_TagString
+      value: enemyTower
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119939022262836460, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2119939022262836460, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
+      propertyPath: m_TagString
+      value: tower
+      objectReference: {fileID: 0}
     - target: {fileID: 2120752879458396873, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2037,6 +2061,14 @@ PrefabInstance:
     - target: {fileID: 2120752879458396874, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
       propertyPath: m_Name
       value: Escenario
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272646696544113315, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 5272646696544113315, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
+      propertyPath: m_TagString
+      value: tower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 588ed39fbd68f714cbb5f302b7ae2875, type: 3}
