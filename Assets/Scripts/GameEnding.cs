@@ -10,10 +10,12 @@ public class GameEnding : MonoBehaviour
 
     float m_Timer;
     bool gameTimeEnd;
+    bool torresDestruidas;
 
     public CanvasGroup lostImageCanvasGroup;
     public CanvasGroup winImageCanvasGroup;
     public Timer gameTime;
+    public towerScript towerDestroyed;
 
     public void timeEnds()
     {
@@ -23,11 +25,20 @@ public class GameEnding : MonoBehaviour
         }
     }
 
+    public void principalTowerDestroyed()
+    {
+        if (towerDestroyed.torrePrincpDestruida == true)
+        {
+            torresDestruidas = true;
+        }
+    }
+
     void Update()
     {
         timeEnds();
+        principalTowerDestroyed();
 
-        if (gameTimeEnd)
+        if (gameTimeEnd || torresDestruidas)
         {
             EndLevel(lostImageCanvasGroup, false);
         }
