@@ -340,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 327434644}
   m_Layer: 0
-  m_Name: Tropas
+  m_Name: TropasPrueba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -533,7 +533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 449939458}
   m_Layer: 0
-  m_Name: TorresDestruidas
+  m_Name: TorresDestruidasPrueba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
