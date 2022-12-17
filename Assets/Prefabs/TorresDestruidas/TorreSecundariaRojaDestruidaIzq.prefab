@@ -997,7 +997,7 @@ GameObject:
   - component: {fileID: 645722037370380587}
   - component: {fileID: 8968913102401434897}
   m_Layer: 0
-  m_Name: TorreSecundariaRojaDestruida
+  m_Name: TorreSecundariaRojaDestruidaIzq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
