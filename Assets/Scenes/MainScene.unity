@@ -350,6 +350,7 @@ MonoBehaviour:
   vidaTorre: 100
   torreDestruida: {fileID: 6251442769908316589, guid: 01dd3c977e2dc0a458bcb3667577c28a, type: 3}
   torrePrincpDestruida: 0
+  torrePrincpEnemigaDestruida: 0
 --- !u!1 &329516775
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +998,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919035133}
-  m_CullTransparentMesh: 0
+  m_CullTransparentMesh: 1
 --- !u!225 &919035137
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1909,6 +1910,7 @@ MonoBehaviour:
   winImageCanvasGroup: {fileID: 919035137}
   gameTime: {fileID: 223004577}
   towerDestroyed: {fileID: 1704296768}
+  enemytowerDestroyed: {fileID: 2120752878337325834}
 --- !u!4 &1591925269
 Transform:
   m_ObjectHideFlags: 0
@@ -2009,6 +2011,7 @@ MonoBehaviour:
   vidaTorre: 200
   torreDestruida: {fileID: 3885305698336890333, guid: fcd18d3785eb38846bac5362974d2f14, type: 3}
   torrePrincpDestruida: 0
+  torrePrincpEnemigaDestruida: 0
 --- !u!1 &1824773223
 GameObject:
   m_ObjectHideFlags: 0
@@ -2104,6 +2107,7 @@ MonoBehaviour:
   vidaTorre: 100
   torreDestruida: {fileID: 4301765410557681946, guid: afcc801736183984ea0f80db18aebc29, type: 3}
   torrePrincpDestruida: 0
+  torrePrincpEnemigaDestruida: 0
 --- !u!1 &1947911564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2773,6 +2777,7 @@ MonoBehaviour:
   vidaTorre: 100
   torreDestruida: {fileID: 517954484457696955, guid: f83c1d57b172922458db75339251bc9a, type: 3}
   torrePrincpDestruida: 0
+  torrePrincpEnemigaDestruida: 0
 --- !u!114 &2120752878337325833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2788,6 +2793,7 @@ MonoBehaviour:
   vidaTorre: 100
   torreDestruida: {fileID: 623565858265273259, guid: 6e24f50cf23766b4984959031d7ac973, type: 3}
   torrePrincpDestruida: 0
+  torrePrincpEnemigaDestruida: 0
 --- !u!114 &2120752878337325834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2803,3 +2809,4 @@ MonoBehaviour:
   vidaTorre: 200
   torreDestruida: {fileID: 3751157473427241300, guid: ef02b163657f9694b8d42b4f82f34fec, type: 3}
   torrePrincpDestruida: 0
+  torrePrincpEnemigaDestruida: 0
