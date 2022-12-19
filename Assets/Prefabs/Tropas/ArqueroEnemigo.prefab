@@ -352,9 +352,8 @@ GameObject:
   - component: {fileID: 8973737117825696106}
   - component: {fileID: 9066642298217738152}
   - component: {fileID: 9035161737429937654}
-  - component: {fileID: 1305465737173221798}
   m_Layer: 0
-  m_Name: Arquero
+  m_Name: ArqueroEnemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -409,27 +408,6 @@ CapsuleCollider:
   m_Height: 1.8772755
   m_Direction: 1
   m_Center: {x: 0, y: 0.99, z: 0}
---- !u!114 &1305465737173221798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8971594762277698982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 289c13b1b94092a45b62511c53dd296f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 1
-  rotationSpeed: 1
-  currentState: 0
-  maxChaseDistance: 10
-  mask:
-    serializedVersion: 2
-    m_Bits: 8
-  radiusDetection: 1000
-  targetPosition: {x: 24.7, y: 0.7, z: 19.7}
 --- !u!1 &8971595211578400592
 GameObject:
   m_ObjectHideFlags: 0

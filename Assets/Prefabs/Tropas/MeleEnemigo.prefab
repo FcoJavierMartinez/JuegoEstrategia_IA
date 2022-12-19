@@ -939,9 +939,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7000833441767600613}
   - component: {fileID: 7000833441775050297}
-  - component: {fileID: -6823870623873417863}
   m_Layer: 0
-  m_Name: Mele
+  m_Name: MeleEnemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -982,27 +981,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-6823870623873417863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7000833441767632261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 289c13b1b94092a45b62511c53dd296f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 2
-  rotationSpeed: 2
-  currentState: 0
-  maxChaseDistance: 10
-  mask:
-    serializedVersion: 2
-    m_Bits: 8
-  radiusDetection: 1000
-  targetPosition: {x: 24.7, y: 0.7, z: 19.7}
 --- !u!1 &7000833441767632263
 GameObject:
   m_ObjectHideFlags: 0

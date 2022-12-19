@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 8976004521831173225}
   - component: {fileID: 593275130991854800}
   m_Layer: 0
-  m_Name: Tanque
+  m_Name: TanqueEnemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,8 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289c13b1b94092a45b62511c53dd296f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0.7
-  rotationSpeed: 0.8
+  movementSpeed: 1
+  rotationSpeed: 1
   currentState: 0
   maxChaseDistance: 10
   mask:
