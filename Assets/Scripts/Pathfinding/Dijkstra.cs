@@ -7,6 +7,7 @@ public class Dijkstra : MonoBehaviour
 {
 
     public Vector3 CenterGrid;
+    public bool calculateGrid;
     public Vector3 SizeGrid;
     public Vector3 SizeNode;
     public float SphereRadiusWallDetector;
@@ -24,6 +25,10 @@ public class Dijkstra : MonoBehaviour
     #endregion
 
     private void Start()
+    {
+        CalculateGrid();
+    }
+    private void CalculateGrid()
     {
         nNodesX = Convert.ToInt32(SizeGrid.x / SizeNode.x);
         nNodesZ = Convert.ToInt32(SizeGrid.z / SizeNode.z);
@@ -48,7 +53,7 @@ public class Dijkstra : MonoBehaviour
                 {
                     for (int plusJ = -1; plusJ <= 1; plusJ++)
                     {
-                        if (Math.Abs(plusI) == Math.Abs(plusJ)) continue;
+                        if (plusI == 0 && plusJ == 0) continue;
 
                         int newI = i + plusI;
                         int newJ = j + plusJ;
@@ -144,7 +149,7 @@ public class Dijkstra : MonoBehaviour
         return i < 0 || j < 0 || i >= grid.GetLength(0) || j >= grid.GetLength(1);
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         if (dontShowGizmos) return;
         if (algorithm)
@@ -153,14 +158,26 @@ public class Dijkstra : MonoBehaviour
             algorithm = false;
         }
 
+        if (calculateGrid)
+        {
+            CalculateGrid();
+            calculateGrid = false;
+        }
         if (grid != null)
         {
+            Gizmos.DrawWireCube(CenterGrid, SizeGrid);
             foreach (Node n in grid)
             {
-                if (n == NodeFromWorldPos(initialPos.position)) Gizmos.color = Color.blue;
-                else if (n == NodeFromWorldPos(finalPos.position)) Gizmos.color = Color.green;
+                bool initialpos = n == NodeFromWorldPos(initialPos.position);
+                bool finalpos = n == NodeFromWorldPos(finalPos.position);
+                if (initialpos) Gizmos.color = Color.blue;
+                else if (finalpos) Gizmos.color = Color.green;
                 else Gizmos.color = n.walkable ? Color.white : Color.red;
-                Gizmos.DrawWireCube(n.position, SizeNode - new Vector3(0.05f, 0.05f, 0.05f));
+
+                if (initialpos || finalpos)
+                    Gizmos.DrawCube(n.position, SizeNode - new Vector3(0.05f, 0.05f, 0.05f));
+                else
+                    Gizmos.DrawWireCube(n.position, SizeNode - new Vector3(0.05f, 0.05f, 0.05f));
             }
             if (path != null)
             {

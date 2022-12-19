@@ -143,6 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9064723994416284323}
   - component: {fileID: 8976004521831173225}
+  - component: {fileID: 593275130991854800}
   m_Layer: 0
   m_Name: Tanque
   m_TagString: Untagged
@@ -185,6 +186,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &593275130991854800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9061308855691115329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 289c13b1b94092a45b62511c53dd296f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 1
+  rotationSpeed: 1
+  currentState: 0
+  maxChaseDistance: 10
+  mask:
+    serializedVersion: 2
+    m_Bits: 8
+  radiusDetection: 1000
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &9061315667826405013
 GameObject:
   m_ObjectHideFlags: 0

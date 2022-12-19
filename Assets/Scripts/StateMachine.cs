@@ -12,22 +12,49 @@ public class StateMachine : MovingEntity
     }
 
     public state currentState;
-    public Dijkstra Pathfinder;
+    private Dijkstra Pathfinder;
     public float maxChaseDistance = 10f;
-
-    private Vector3 investigationPosition;
-
+    List<Node> path = new List<Node>();
+    public LayerMask mask;
+    public float radiusDetection = 1000;
     float distanceToChange = 1f;
-    Vector3 targetPosition;
+    public Vector3 targetPosition;
     Vector3 towardsTarget;
     Transform currentTarget;
 
     void Start()
     {
+        Pathfinder = GameObject.Find("Dijkstra").GetComponent<Dijkstra>();
+        ChooseTarget();
+        GetPath();
         StartCoroutine(FSM());
         Debug.Log("Current State -> " + currentState);
     }
 
+    void ChooseTarget()
+    {
+        Collider[] targets = Physics.OverlapSphere(transform.position, radiusDetection, mask);
+
+        Debug.Log("Amount of targets: " + targets.Length);
+        if (targets.Length == 0) return;
+        int nearestTarget = 0;
+        float minDistance = Vector3.Distance(transform.position, targets[0].transform.position);
+        for(int i = 1; i < targets.Length; i++)
+        {
+            float distance = Vector3.Distance(transform.position, targets[i].transform.position);
+            if (distance < minDistance)
+            {
+                nearestTarget = i;
+                minDistance = distance;
+            }
+        }
+        targetPosition = targets[nearestTarget].transform.position;
+        Debug.Log(targetPosition);
+    }
+    void GetPath()
+    {
+        path = Pathfinder.Algorithm(transform.position, targetPosition);
+    }
     IEnumerator FSM()
     {
         while (true)
@@ -52,21 +79,19 @@ public class StateMachine : MovingEntity
     public void ChangeToAttack(Vector3 iposition)
     {
         Debug.Log(currentState + "->" + state.AtacarEnemigo);
-        investigationPosition = iposition;
         currentState = state.AtacarEnemigo;
     }
 
     IEnumerator Normal()
     {
-        int i = 0;
-        while (currentState == state.Normal)
+        while (currentState == state.Normal && path.Count > 0)
         {
-            // targetPosition = Waypoints[i].position;
+            targetPosition = path[0].position;
             towardsTarget = targetPosition - transform.position;
             MoveTowards(towardsTarget.normalized);
 
-            if (towardsTarget.magnitude < 0.25f)
-                i++;
+            if (towardsTarget.magnitude < 1f)
+                path.RemoveAt(0);
 
             Debug.DrawLine(transform.position, targetPosition, Color.green);
             yield return 0;
