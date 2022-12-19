@@ -21,7 +21,6 @@ public class StateMachine : MovingEntity
     Vector3 targetPosition;
     Vector3 towardsTarget;
     Transform currentTarget;
-    float secondsWaiting;
 
     void Start()
     {
