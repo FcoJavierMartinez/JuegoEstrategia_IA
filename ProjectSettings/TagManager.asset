@@ -8,6 +8,7 @@ TagManager:
   - enemyTower
   - TowerPrincipal
   - enemyTowerPrincipal
+  - wizard
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - Torre
   - Water
   - UI
-  - 
-  - 
+  - Rojo
+  - Azul
   - 
   - 
   - 

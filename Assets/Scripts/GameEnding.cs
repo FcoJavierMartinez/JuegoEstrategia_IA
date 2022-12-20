@@ -21,7 +21,7 @@ public class GameEnding : MonoBehaviour
 
     public void timeEnds()
     {
-        if (gameTime.time < 0f)
+        if (gameTime.time <= 0f)
         {
             gameTimeEnd = true;
         }

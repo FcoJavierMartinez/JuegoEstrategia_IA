@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7634402548859151068}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: BottomEyeCover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7634227238903459352}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: UpperEyeCover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7634318850281956254}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Crown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7634206166975357336}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Side_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7634682526263825010}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7634727052926519642}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7634397439970034280}
   - component: {fileID: 7499982178840503966}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7634679026349542252}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: EyeCTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,9 +319,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7634224350394615396}
   - component: {fileID: 7543082264769188278}
-  - component: {fileID: -1725546917626367804}
-  m_Layer: 0
-  m_Name: Bomba
+  - component: {fileID: 4157820200917103168}
+  - component: {fileID: -9108469517814291776}
+  - component: {fileID: 3554350597203931939}
+  m_Layer: 6
+  m_Name: Bomba_Enemiga
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,7 +364,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &-1725546917626367804
+--- !u!135 &4157820200917103168
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636606171733959642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.53
+  m_Center: {x: 0, y: 0.44, z: 0}
+--- !u!114 &-9108469517814291776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,18 +386,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 7636606171733959642}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 289c13b1b94092a45b62511c53dd296f, type: 3}
+  m_Script: {fileID: 11500000, guid: bcce97b0013a00c44b1b4324031bb313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2.5
-  rotationSpeed: 2
-  currentState: 0
-  maxChaseDistance: 10
-  mask:
-    serializedVersion: 2
-    m_Bits: 8
-  radiusDetection: 1000
-  targetPosition: {x: 24.7, y: 0.7, z: 19.7}
+  equipo: 0
+  vida: 150
+  barra_vida: {fileID: 4762377974822090890, guid: 7c3d2bc87cd5dd848b1c75e20e955405, type: 3}
+--- !u!114 &3554350597203931939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7636606171733959642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec183a2b00647cd47897533f99bc2aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyLayer: 7
+  atRatio: 2
+  danio: 85
 --- !u!1 &7636816748522989530
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +416,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7632584009568041410}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Side_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7634673923286594026}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Spine01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7632976751499381652}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: EyeBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
