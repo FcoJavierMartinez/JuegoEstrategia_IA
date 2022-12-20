@@ -10,7 +10,7 @@ public class melee : MonoBehaviour
     private GameObject closest, closest2;
     public LayerMask enemyMask;
     private Animator m_Animator;
-    [Range(1,5)]
+    [Range(0,5)]
     public float atRatio;
     public float atRango;
     private float atTimer;

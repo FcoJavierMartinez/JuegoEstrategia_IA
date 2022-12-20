@@ -5322,6 +5322,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6657554720354134359, guid: 448299780f956c74e9cad29ed645197e, type: 3}
+      propertyPath: atRatio
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7000833441767600613, guid: 448299780f956c74e9cad29ed645197e, type: 3}
       propertyPath: m_RootOrder
       value: 1

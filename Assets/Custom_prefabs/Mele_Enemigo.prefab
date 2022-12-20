@@ -1027,7 +1027,7 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 128
-  atRatio: 1.5
+  atRatio: 1.2
   atRango: 6
   torres: []
   danio: 150
